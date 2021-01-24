@@ -57,7 +57,7 @@ refs.closeOverlay.addEventListener('click', closeModal);
 function openModal() {
   refs.largeImage.classList.add('is-open');
   window.addEventListener('keydown', closeModalEsc);
-  window.addEventListener('keydown', arrowModalImg);
+  //window.addEventListener('keydown', arrowModalImg);
 }
 
 function closeModal() {
@@ -65,7 +65,7 @@ function closeModal() {
   refs.imageModal.src = '';
   refs.imageModal.alt = '';
   window.removeEventListener('keydown', closeModalEsc);
-  window.removeEventListener('keydown', arrowModalImg);
+  //window.removeEventListener('keydown', arrowModalImg);
 }
 
 function closeModalEsc(event) {
